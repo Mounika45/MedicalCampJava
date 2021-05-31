@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MedicalCampPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.aegis.healthcamp.entities.MGender</class>
+    <class>com.aegis.healthcamp.entities.MVision</class>
+    <class>com.aegis.healthcamp.entities.MHistory</class>
+    <class>com.aegis.healthcamp.entities.MOfficeusedetails</class>
+    <class>com.aegis.healthcamp.entities.TtUploaddocs</class>
+    <class>com.aegis.healthcamp.entities.MRegistration</class>
+    <class>com.aegis.healthcamp.entities.TtOutpatient</class>
+    <class>com.aegis.healthcamp.entities.TtEyespec</class>
+    <class>com.aegis.healthcamp.entities.MOcular</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://192.168.0.160:1433;databaseName=MedCamp"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="ACS@12345$"/>
+    </properties>
+  </persistence-unit>
+</persistence>
